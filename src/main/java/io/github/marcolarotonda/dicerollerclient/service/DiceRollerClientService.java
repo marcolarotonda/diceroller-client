@@ -24,6 +24,7 @@ class DiceRollerClientService {
                         .queryParam("quantity", rollOption.getQuantity())
                         .queryParam("modifier", rollOption.getModifier())
                         .queryParam("merit", rollOption.isMerit())
+                        .queryParam("rollType", rollOption.getRollType())
                         .build())
                 .header("Content-Type", "application/json")
                 .retrieve()
