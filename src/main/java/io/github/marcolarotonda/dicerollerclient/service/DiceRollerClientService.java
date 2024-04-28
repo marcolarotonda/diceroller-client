@@ -11,7 +11,7 @@ class DiceRollerClientService {
 
     private final RestClient restClient;
 
-    DiceRollerClientService(@Value("${application.client.base-url}") String baseUrl) {
+    DiceRollerClientService(@Value("${dice-roller-client.server-base-url}") String baseUrl) {
         this.restClient = RestClient.builder()
                 .baseUrl(baseUrl)
                 .build();
